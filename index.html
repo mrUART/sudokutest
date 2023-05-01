@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./validSolution.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <label class="label">
+    validSolution(
+    <input id="input" class="inp" value=""/>
+    )
+  </label>
+  =
+  <span id="result"></span><br/>
+  <button class="btn" onclick="solve()">Solve</button>
+
+  <script>
+    function solve(){
+      const value = document.querySelector('#input').value;
+      
+      const result = validSolution(value);
+
+      document.querySelector('#result').innerHTML = result;
+    }
+  </script>
+  <style>
+    body{
+      background: #000;
+      color: #fff;
+      font-size: 14px;
+    }
+    input{
+      width: 900px;
+      
+    }
+
+  </style>
+</body>
+</html>
